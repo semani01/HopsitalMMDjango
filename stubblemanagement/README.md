@@ -13,68 +13,60 @@
 ---
 ## Functions
 ### Admin
-- Signup their account. Then Login (No approval Required).
-- Can register/view/approve/reject/delete doctor (approve those doctor who applied for job in their hospital).
+- Sign up for their account. Then log in (No Approval Required).
+- Can register/view/approve/reject/delete doctors (approve those doctors who applied for jobs in their hospital).
 - Can admit/view/approve/reject/discharge patient (discharge patient when treatment is done).
-- Can Generate/Download Invoice pdf (Generate Invoice according to medicine cost, room charge, doctor charge and other charge).
-- Can view/book/approve Appointment (approve those appointments which is requested by patient).
+- Can Generate/Download Invoice pdf (Generate Invoice according to medicine cost, room charge, doctor charge, and other charge).
+- Can view/book/approve Appointments (approve those appointments that the patient requests).
 
 ### Doctor
-- Apply for job in hospital. Then Login (Approval required by hospital admin, Then only doctor can login).
+- Apply for a job in a hospital. Then log in (Approval required by hospital admin, only the doctor can log in).
 - Can only view their patient details (symptoms, name, mobile ) assigned to that doctor by admin.
 - Can view their discharged(by admin) patient list.
 - Can view their Appointments, booked by admin.
-- Can delete their Appointment, when doctor attended their appointment.
+- Can delete their Appointment, when the doctor attended their appointment.
 
 ### Patient
-- Create account for admit in hospital. Then Login (Approval required by hospital admin, Then only patient can login).
+- Create an account for admission to the hospital. Then log in (Approval required by hospital admin, only the patient can log in).
 - Can view assigned doctor's details like ( specialization, mobile, address).
 - Can view their booked appointment status (pending/confirmed by admin).
-- Can book appointments.(approval required by admin)
-- Can view/download Invoice pdf (Only when that patient is discharged by admin).
+- Can book appointments. (approval required by admin)
+- Can view/download Invoice pdf (Only when admin discharges that patient).
 
 ---
 
 ## HOW TO RUN THIS PROJECT
-- Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
-- Open Terminal and Execute Following Commands :
+- Install Python(3.7.6) (Do forget to Tick Add to Path while installing Python)
+- Open the Terminal and Execute the Following Commands :
 ```
 pip install django==3.0.5
-pip install django-widget-tweaks
+pip install Django-widget-tweaks
 pip install xhtml2pdf
 ```
 - Download This Project Zip Folder and Extract it
-- Move to project folder in Terminal. Then run following Commands :
+- Move to the project folder in Terminal. Then run the following Commands :
 ```
-py manage.py makemigrations
+py manage.py make migrations
 py manage.py migrate
-py manage.py runserver
+py manage.py run server
 ```
-- Now enter following URL in Your Browser Installed On Your Pc
+- Now enter the following URL in Your Browser Installed On Your PC
 ```
 http://127.0.0.1:8000/
 ```
 
 ## CHANGES REQUIRED FOR CONTACT US PAGE
-- In settins.py file, You have to give your email and password
+- In the settins.py file, You have to give your email and password
 ```
 EMAIL_HOST_USER = 'youremail@gmail.com'
 EMAIL_HOST_PASSWORD = 'your email password'
 EMAIL_RECEIVING_USER = 'youremail@gmail.com'
 ```
-- Login to gmail through host email id in your browser and open following link and turn it ON
+- Login to Gmail through the host email ID in your browser open the following link and turn it ON
 ```
 https://myaccount.google.com/lesssecureapps
 ```
 ## Drawbacks/LoopHoles
-- Any one can be Admin. There is no Approval required for admin account. So you can disable admin signup process and use any logic like creating superuser.
-- There should be at least one doctor in hospital before admitting patient. So first add doctor.
-- On update page of doctor/patient you must have to update password.
-
-## Disclaimer
-This project is developed for demo purpose and it's not supposed to be used in real application.
-
-## Feedback
-Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/sumit.luv)
-- [Subscribe my Channel LazyCoder On Youtube](https://youtube.com/lazycoders)
+- Anyone can be an Admin. There is no Approval required for the admin account. So you can disable the admin signup process and use any logic like creating a superuser.
+- There should be at least one doctor in the hospital before admitting a patient. So first add doctor.
+- On the update page of the doctor/patient you must update the password.
