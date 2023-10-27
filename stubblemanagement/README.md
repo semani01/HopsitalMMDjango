@@ -2,12 +2,7 @@
 ![developer](https://img.shields.io/badge/Developed%20By%20%3A-Sai%20Emani-red)
 ---
 ### Problem Statement
-This project aims to develop a stubble management system for farmers, industries, and manufacturing companies to ease the process of ordering, tracking, and managing one’s inventory and goods which is stubble. There is no compelling reason to go to crowded stores
-or shopping centers during festival seasons. You simply require a PC or a laptop. To access this
-stubble management system all the farmers/consumers will need to have an email and password
-to log in and proceed with their managing. The login credentials for a stubble management system
-are very secure. Upon successful login, the customers can order and track a stubble specific to the
-domain that we cater to. It is very simple to navigate and use.
+This project aims to develop a stubble management system for farmers, industries, and manufacturing companies to ease the process of ordering, tracking, and managing one’s inventory(aka stubble). There is no compelling reason to go to crowded stores or shopping centers during festival seasons: all that one requires is a PC or a laptop. To access, farmers or consumers need credentials to log in. The login credentials for the system are very secure. Upon successful login, the customers can order and track a stubble. It is simple to navigate and use.
 ## screenshots
 ### Homepage
 ![homepage snap](https://github.com/sumitkumar1503/hospitalmanagement/blob/master/static/screenshots/homepage.png?raw=true)
